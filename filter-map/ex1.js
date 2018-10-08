@@ -20,9 +20,16 @@ Tableau en entrée:
 Sortie attendue:
 ['Yoda', 'Obiwan Kenobi', 'Mace Windu']
 
+
+
 */
 
 function getJedisNames(characters) {
+  return characters.filter(function(nom){
+    return nom.side === 'light'
+  }).map(function(nom) {
+    return nom.name
+  })
 }
 
 module.exports = getJedisNames;

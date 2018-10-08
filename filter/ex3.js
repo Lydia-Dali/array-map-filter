@@ -24,7 +24,17 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  return names.filter(nom =>
+    nom.endsWith('Stark'));
 }
+
+/*function keepStarks(names) {
+  return names.filter(function(nom){
+    if(nom.endsWith('Stark')){
+      return names.filter
+    }
+  })
+}*/
 
 // Ne pas modifier l'export
 module.exports = keepStarks;

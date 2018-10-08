@@ -48,6 +48,7 @@ Arguments en entrée:
 Sortie attendue:
   [{ Bordeaux: 12 }, { Lille: 12 }]
 
+  
 */
 
 function getStudentsPerCurriculum(campuses, curriculumName) {

@@ -1,3 +1,4 @@
+
 /* Array.prototype.filter - Exercice 6
 
 Ecrire une fonction filterOffensiveComments, qui attend deux paramètres, tous deux
@@ -27,7 +28,22 @@ Sortie attendue:
 */
 
 function filterOffensiveComments(comments, bannedWords) {
+  return comments.filter(comment => {
+    return (!(bannedWords.map(banWord => comment.toLowerCase().includes(banWord))).includes(true))})
+  
 }
+
+/*
+function filterOffensiveComments(comments, bannedWords) 
+{
+	return comments.filter(function(comment){
+    return(!(bannedWords.map(function(banWord){
+     return (comment.toLowerCase().includes(banWord)).includes(true)
+    })));
+   })
+ });
+}
+ */
 
 // Ne pas modifier l'export
 module.exports = filterOffensiveComments;
