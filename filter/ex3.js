@@ -37,4 +37,4 @@ function keepStarks(names) {
 }*/
 
 // Ne pas modifier l'export
-module.exports = keepStarks;
+module.exports =  keepStarks;
